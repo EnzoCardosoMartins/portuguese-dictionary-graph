@@ -8,8 +8,8 @@ from tqdm import tqdm
 nlp = spacy.load("pt_core_news_lg")
 
 # Define os caminhos
-DIRETORIO_XMLS = Path("xmls")
-ARQUIVO_SAIDA = "grafo_arestas.jsonl"
+DIRETORIO_XMLS = Path("../dados/xmls")
+ARQUIVO_SAIDA = "../dados/grafo_arestas.jsonl"
 
 def processar_arquivo_xml(caminho_xml, f_out):
     """Processa um único arquivo XML e escreve os resultados no arquivo de saída."""
