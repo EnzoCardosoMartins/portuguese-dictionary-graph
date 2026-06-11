@@ -7,6 +7,14 @@ from tqdm import tqdm
 # Inicializa o spaCy
 nlp = spacy.load("pt_core_news_lg")
 
+PALAVRAS_EXCLUIDAS = {
+    "adj", "sf", "sm", "vide", "cf", "v", "intr", "tr", "prov", 
+    "ant", "fig", "lat", "gr", "p", "ex", "etc", "ger", "cp", "á", "i", "ii", "ás", "lat"
+}
+
+for palavra in PALAVRAS_EXCLUIDAS:
+    nlp.vocab[palavra].is_stop = True
+
 # Define os caminhos
 DIRETORIO_XMLS = Path("../dados/xmls")
 ARQUIVO_SAIDA = "../dados/grafo_arestas.jsonl"
