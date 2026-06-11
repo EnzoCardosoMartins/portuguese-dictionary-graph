@@ -6,7 +6,7 @@
 
 ## Sobre o Projeto
 
-Este projeto constrói um **grafo semântico da língua portuguesa** a partir do [Dicionário Aberto](https://github.com/próprio-link) — uma obra lexicográfica baseada no dicionário de Cândido de Figueiredo, mantida por Alberto Simões e pela Universidade do Minho. Cada verbete se torna um nó, e cada palavra relevante presente em sua definição gera uma aresta direcionada — revelando quais conceitos são mais fundamentais para a língua, quais palavras formam ciclos de definição circular, e qual o caminho conceitual mínimo entre duas palavras quaisquer.
+Este projeto constrói um **grafo semântico da língua portuguesa** a partir do [Dicionário Aberto](https://github.com/ambs/Dicionario-Aberto) — uma obra lexicográfica baseada no dicionário de Cândido de Figueiredo, mantida por Alberto Simões e pela Universidade do Minho. Cada verbete se torna um nó, e cada palavra relevante presente em sua definição gera uma aresta direcionada — revelando quais conceitos são mais fundamentais para a língua, quais palavras formam ciclos de definição circular, e qual o caminho conceitual mínimo entre duas palavras quaisquer.
 
 ### Motivação
 
@@ -113,7 +113,7 @@ python -m spacy download pt_core_news_lg
 
 ### 3. Obtenha os arquivos do Dicionário Aberto
 
-O dataset é distribuído pelo projeto [Dicionário Aberto](https://github.com/apertium/dicionario-aberto) (obra baseada em Cândido de Figueiredo, mantida por Alberto Simões / Universidade do Minho) e vem estruturado em XML puro, fragmentado por letra.
+O dataset é distribuído pelo projeto [Dicionário Aberto](https://github.com/ambs/Dicionario-Aberto) (obra baseada em Cândido de Figueiredo, mantida por Alberto Simões / Universidade do Minho) e vem estruturado em XML puro, fragmentado por letra.
 
 ```bash
 mkdir -p dados/xmls
